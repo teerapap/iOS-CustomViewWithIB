@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCustomView">
+            <connections>
+                <outlet property="imageView" destination="wNU-cx-WLQ" id="QXa-xm-fTE"/>
+                <outlet property="label" destination="fXB-9Q-pj3" id="SKg-5p-Rwh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="514"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXB-9Q-pj3">
+                    <rect key="frame" x="211" y="485" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wNU-cx-WLQ">
+                    <rect key="frame" x="0.0" y="0.0" width="464" height="477"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wNU-cx-WLQ" secondAttribute="bottom" constant="37" id="35o-ep-sHA"/>
+                <constraint firstItem="fXB-9Q-pj3" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="NCR-Yi-BKf"/>
+                <constraint firstItem="wNU-cx-WLQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OHS-0v-L6H"/>
+                <constraint firstAttribute="centerX" secondItem="fXB-9Q-pj3" secondAttribute="centerX" id="QKT-6l-IDm"/>
+                <constraint firstAttribute="trailing" secondItem="wNU-cx-WLQ" secondAttribute="trailing" id="RLh-po-2Vk"/>
+                <constraint firstItem="wNU-cx-WLQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZOv-Ma-PPd"/>
+                <constraint firstItem="fXB-9Q-pj3" firstAttribute="top" secondItem="wNU-cx-WLQ" secondAttribute="bottom" constant="8" id="tpo-gC-iDf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="266" y="364"/>
+        </view>
+    </objects>
+</document>
